@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/process-getuid",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Return the numeric user identity of a calling process.",
   "license": "Apache-2.0",
   "author": {
