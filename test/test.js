@@ -44,7 +44,7 @@ tape( 'main export is a function', opts, function test( t ) {
 
 tape( 'if `process.getuid` is a function, the main export aliases `process.getuid`', opts, function test( t ) {
 	var getuid = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/is-function': isFunction
+		'@stdlib/assert-is-function': isFunction
 	});
 	t.strictEqual( getuid, proc.getuid, 'is alias' );
 	t.end();
@@ -56,7 +56,7 @@ tape( 'if `process.getuid` is a function, the main export aliases `process.getui
 
 tape( 'if an environment does not support `process.getuid`, the main export always returns `null`', opts, function test( t ) {
 	var getuid = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/is-function': isFunction
+		'@stdlib/assert-is-function': isFunction
 	});
 	t.strictEqual( typeof getuid, 'function', 'main export is a function' );
 	t.strictEqual( getuid(), null, 'returns null' );
