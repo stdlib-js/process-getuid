@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import getuid from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-getuid@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/process-getuid/tags). For example,
+
+```javascript
 import getuid from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-getuid@v0.1.0-esm/index.mjs';
 ```
 
@@ -78,7 +83,7 @@ var id = getuid();
 <body>
 <script type="module">
 
-import getuid from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-getuid@v0.1.0-esm/index.mjs';
+import getuid from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-getuid@esm/index.mjs';
 
 var uid = getuid();
 if ( uid === 0 ) {
