@@ -35,38 +35,30 @@ limitations under the License.
 
 > Return the numeric user identity of the calling process.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/process-getuid
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-getuid = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/process-getuid@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var getuid = require( 'path/to/vendor/umd/process-getuid/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/process-getuid@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.getuid;
-})();
-</script>
+var getuid = require( '@stdlib/process-getuid' );
 ```
 
 #### getuid()
@@ -96,13 +88,8 @@ var id = getuid();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/process-getuid@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var getuid = require( '@stdlib/process-getuid' );
 
 var uid = getuid();
 if ( uid === 0 ) {
@@ -110,11 +97,6 @@ if ( uid === 0 ) {
 } else {
     console.log( 'uid: %d', uid );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -210,11 +192,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/process/getegid]: https://github.com/stdlib-js/process-getegid/tree/umd
+[@stdlib/process/getegid]: https://github.com/stdlib-js/process-getegid
 
-[@stdlib/process/geteuid]: https://github.com/stdlib-js/process-geteuid/tree/umd
+[@stdlib/process/geteuid]: https://github.com/stdlib-js/process-geteuid
 
-[@stdlib/process/getgid]: https://github.com/stdlib-js/process-getgid/tree/umd
+[@stdlib/process/getgid]: https://github.com/stdlib-js/process-getgid
 
 <!-- </related-links> -->
 
