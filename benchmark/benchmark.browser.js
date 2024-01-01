@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var isNull = require( '@stdlib/assert-is-null' );
 var pkg = require( './../package.json' ).name;
 var getuid = require( './../lib/polyfill.js' );
