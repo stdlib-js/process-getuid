@@ -35,32 +35,14 @@ limitations under the License.
 
 > Return the numeric user identity of the calling process.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/process-getuid
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var getuid = require( '@stdlib/process-getuid' );
+import getuid from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-getuid@esm/index.mjs';
 ```
 
 #### getuid()
@@ -90,8 +72,13 @@ var id = getuid();
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var getuid = require( '@stdlib/process-getuid' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import getuid from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-getuid@esm/index.mjs';
 
 var uid = getuid();
 if ( uid === 0 ) {
@@ -99,6 +86,10 @@ if ( uid === 0 ) {
 } else {
     console.log( 'uid: %d', uid );
 }
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -130,7 +121,7 @@ if ( uid === 0 ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -197,11 +188,11 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/process/getegid]: https://github.com/stdlib-js/process-getegid
+[@stdlib/process/getegid]: https://github.com/stdlib-js/process-getegid/tree/esm
 
-[@stdlib/process/geteuid]: https://github.com/stdlib-js/process-geteuid
+[@stdlib/process/geteuid]: https://github.com/stdlib-js/process-geteuid/tree/esm
 
-[@stdlib/process/getgid]: https://github.com/stdlib-js/process-getgid
+[@stdlib/process/getgid]: https://github.com/stdlib-js/process-getgid/tree/esm
 
 <!-- </related-links> -->
 
