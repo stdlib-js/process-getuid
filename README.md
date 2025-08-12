@@ -35,14 +35,32 @@ limitations under the License.
 
 > Return the numeric user identity of the calling process.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/process-getuid
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import getuid from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-getuid@deno/mod.js';
+var getuid = require( '@stdlib/process-getuid' );
 ```
 
 #### getuid()
@@ -61,7 +79,7 @@ var id = getuid();
 
 ## Notes
 
--   The function **only** returns an `integer` user identity on POSIX platforms. For all other platforms (e.g., Windows, browsers, and Android), the function returns `null`. 
+-   The function **only** returns an `integer` user identity on POSIX platforms. For all other platforms (e.g., Windows, browsers, and Android), the function returns `null`.
 -   See [getuid(2)][getuid].
 
 </section>
@@ -73,7 +91,7 @@ var id = getuid();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import getuid from 'https://cdn.jsdelivr.net/gh/stdlib-js/process-getuid@deno/mod.js';
+var getuid = require( '@stdlib/process-getuid' );
 
 var uid = getuid();
 if ( uid === 0 ) {
@@ -112,7 +130,7 @@ if ( uid === 0 ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -179,11 +197,11 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/process/getegid]: https://github.com/stdlib-js/process-getegid/tree/deno
+[@stdlib/process/getegid]: https://github.com/stdlib-js/process-getegid
 
-[@stdlib/process/geteuid]: https://github.com/stdlib-js/process-geteuid/tree/deno
+[@stdlib/process/geteuid]: https://github.com/stdlib-js/process-geteuid
 
-[@stdlib/process/getgid]: https://github.com/stdlib-js/process-getgid/tree/deno
+[@stdlib/process/getgid]: https://github.com/stdlib-js/process-getgid
 
 <!-- </related-links> -->
 
