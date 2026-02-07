@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/process-getuid",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Return the numeric user identity of a calling process.",
   "license": "Apache-2.0",
   "author": {
@@ -41,12 +41,12 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-is-function": "^0.2.2"
+    "@stdlib/assert-is-function": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/assert-is-browser": "^0.2.2",
-    "@stdlib/assert-is-null": "^0.2.2",
-    "@stdlib/assert-is-number": "^0.2.2",
+    "@stdlib/assert-is-null": "^0.2.3",
+    "@stdlib/assert-is-number": "^0.2.3",
     "proxyquire": "^2.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
