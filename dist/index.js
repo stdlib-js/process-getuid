@@ -1,9 +1,9 @@
-"use strict";var e=function(c,r){return function(){return r||c((r={exports:{}}).exports,r),r.exports}};var t=e(function(b,i){
-function v(){return null}i.exports=v
-});var s=e(function(m,u){
-var l=require("process"),p=l.getuid;u.exports=p
-});var o=e(function(y,n){
-var q=require('@stdlib/assert-is-function/dist'),d=t(),a=s(),g=q(a)?a:d;n.exports=g
-});var x=o();module.exports=x;
+"use strict";var e=function(c,r){return function(){try{return r||c((r={exports:{}}).exports,r),r.exports}catch(v){throw (r=0, v)}};};var t=e(function(m,i){
+function l(){return null}i.exports=l
+});var s=e(function(y,u){
+var p=require("process"),q=p.getuid;u.exports=q
+});var o=e(function(F,n){
+var d=require('@stdlib/assert-is-function/dist'),g=t(),a=s(),x=d(a)?a:g;n.exports=x
+});var f=o();module.exports=f;
 /** @license Apache-2.0 */
 //# sourceMappingURL=index.js.map
